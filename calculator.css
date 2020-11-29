@@ -1,0 +1,83 @@
+* {
+    font-family: Roboto;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin: 5px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
+
+.theCalculator{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    align-items: stretch;
+    border: 1px solid rgb(212, 202, 202);
+    margin: 5px;
+}
+
+.inputString{
+    text-align: right;
+}
+
+input:focus{
+    border-color: rgb(13, 13, 238);
+}
+
+.operations{
+    justify-content: space-evenly;
+    flex-basis: 25%;
+}
+
+.operation{
+
+    background-color:rgb(199, 182, 248);
+    line-height: 2rem;
+    width:3rem;
+    text-align: center;
+}
+/* .nums_and_result{
+    align-items: stretch;
+} */
+
+.buttons{
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-basis: 25%;
+}
+
+button.numbers, button.dot{
+    background-color: rgb(223, 220, 241);
+    line-height: 2rem;
+    width:3rem;
+    text-align: center;
+}
+
+button.delete{
+    background-color: rgb(223, 220, 241);
+    line-height: 2rem;
+    text-align: center;
+}
+
+button.equal{
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    line-height: 2rem;
+    width:3rem;
+    text-align: center;
+}
